@@ -4,7 +4,13 @@
         <feature id="osgi-compendium" version="4.3.1" url="features/osgi-compendium_4.3.1.jar">
         <category name="akka.features-2.3.0"/>
     </feature>
+    <feature id="osgi-compendium.source" version="4.3.1" url="features/osgi-compendium.source_4.3.1.jar">
+        <category name="akka.features-2.3.0"/>
+    </feature>
     <feature id="scala" version="2.10.3" url="features/scala_2.10.3.jar">
+        <category name="akka.features-2.3.0"/>
+    </feature>
+    <feature id="scala.source" version="2.10.3" url="features/scala.source_2.10.3.jar">
         <category name="akka.features-2.3.0"/>
     </feature>
     <feature id="uncommons-maths" version="1.2.2" url="features/uncommons-maths_1.2.2.jar">
@@ -13,16 +19,37 @@
     <feature id="protobuf" version="2.5.0" url="features/protobuf_2.5.0.jar">
         <category name="akka.features-2.3.0"/>
     </feature>
+    <feature id="protobuf.source" version="2.5.0" url="features/protobuf.source_2.5.0.jar">
+        <category name="akka.features-2.3.0"/>
+    </feature>
     <feature id="netty" version="3.8.0.Final" url="features/netty_3.8.0.Final.jar">
+        <category name="akka.features-2.3.0"/>
+    </feature>
+    <feature id="netty.source" version="3.8.0.Final" url="features/netty.source_3.8.0.Final.jar">
         <category name="akka.features-2.3.0"/>
     </feature>
     <feature id="leveldb" version="0.5" url="features/leveldb_0.5.jar">
         <category name="akka.features-2.3.0"/>
     </feature>
+    <feature id="leveldb.source" version="0.5" url="features/leveldb.source_0.5.jar">
+        <category name="akka.features-2.3.0"/>
+    </feature>
     <feature id="typesafe-config" version="1.2.0" url="features/typesafe-config_1.2.0.jar">
         <category name="akka.features-2.3.0"/>
     </feature>
+    <feature id="typesafe-config.source" version="1.2.0" url="features/typesafe-config.source_1.2.0.jar">
+        <category name="akka.features-2.3.0"/>
+    </feature>
+    <feature id="akka-osgi-aries" version="1.2.0" url="features/akka-osgi-aries_1.2.0.jar">
+        <category name="akka.features-2.3.0"/>
+    </feature>
+    <feature id="akka-osgi-aries.source" version="1.2.0" url="features/akka-osgi-aries.source_1.2.0.jar">
+        <category name="akka.features-2.3.0"/>
+    </feature>
     <feature id="akka" version="2.3.0" url="features/akka_2.3.0.jar">
+        <category name="akka.features-2.3.0"/>
+    </feature>
+    <feature id="akka.source" version="2.3.0" url="features/akka.source_2.3.0.jar">
         <category name="akka.features-2.3.0"/>
     </feature>
     <feature id="dining-hakker" version="2.3.0" url="features/dining-hakker_2.3.0.jar">

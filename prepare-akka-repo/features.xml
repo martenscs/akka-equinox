@@ -28,6 +28,9 @@
     <feature name='typesafe-config' description='Typesafe config' version='1.2.0' resolver='(obr)'>
         <bundle start-level="25">mvn:com.typesafe/config/1.2.0</bundle>
     </feature>
+     <feature name='akka-osgi-aries' description='Aries config' version='1.2.0' resolver='(obr)'>
+        <bundle start-level="25">mvn:com.typesafe.akka/akka-osgi-aries_2.10/2.3.0-RC1</bundle>
+    </feature>
     <feature name='akka' description='Akka' version='2.3.0' resolver='(obr)'>
         <feature version="2.10.3">scala</feature>
         <feature version="3.8.0.Final">netty</feature>
