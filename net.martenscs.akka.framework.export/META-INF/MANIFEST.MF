@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Export
+Bundle-SymbolicName: net.martenscs.akka.framework.export
+Bundle-Version: 1.0.0.qualifier
+Fragment-Host: system.bundle; extension:=framework
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Export-Package: sun.misc,
+ sun.nio.ch

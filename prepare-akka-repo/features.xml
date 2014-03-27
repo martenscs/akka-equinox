@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features name="akka.features-2.3.0" xmlns="http://karaf.apache.org/xmlns/features/v1.0.0">
+    <feature name='osgi-compendium' description='OSGi compendium feature' version='4.3.1' resolver='(obr)'>
+        <bundle start-level="10">mvn:org.osgi/org.osgi.compendium/4.3.1</bundle>
+    </feature>
+    <feature name='scala' description='Scala' version='2.10.3' resolver='(obr)'>
+        <bundle start-level="15">mvn:org.scala-lang/scala-library/2.10.3</bundle>
+        <bundle start-level="15">mvn:org.scala-lang/scala-reflect/2.10.3</bundle>
+    </feature>
+    <feature name='uncommons-maths' description='Uncommons Maths' version='1.2.2' resolver='(obr)'>
+        <!-- TODO replace this with upstream uncommons maths 1.2.3 which is OSGi enabled -->
+        <bundle start-level="20">mvn:com.typesafe.akka.akka-sample-osgi-dining-hakkers/uncommons/1.2.2</bundle>
+    </feature>
+    <feature name='protobuf' description='Protobuf feature' version='2.5.0' resolver='(obr)'>
+        <bundle start-level="20">mvn:com.google.protobuf/protobuf-java/2.5.0</bundle>
+    </feature>
+    <feature name='netty' description='Netty feature' version='3.8.0.Final' resolver='(obr)'>
+        <bundle start-level="20">mvn:io.netty/netty/3.8.0.Final</bundle>
+    </feature>
+    <feature name='leveldb' description='LevelDB feature' version='0.5' resolver='(obr)'>
+        <bundle>mvn:org.codehaus.plexus/plexus-classworlds/2.4</bundle>
+        <bundle>mvn:org.xerial/xerial-core/1.0.21</bundle>
+        <bundle>mvn:org.iq80.snappy/snappy/0.2</bundle>
+        <bundle>mvn:org.xerial.snappy/snappy-java/1.0.3</bundle>
+        <bundle start-level="20">mvn:org.iq80.leveldb/leveldb/0.5</bundle>
+        <bundle start-level="20">mvn:org.fusesource.leveldbjni/leveldbjni-all/1.7</bundle>
+    </feature>
+    <feature name='typesafe-config' description='Typesafe config' version='1.2.0' resolver='(obr)'>
+        <bundle start-level="25">mvn:com.typesafe/config/1.2.0</bundle>
+    </feature>
+    <feature name='akka' description='Akka' version='2.3.0' resolver='(obr)'>
+        <feature version="2.10.3">scala</feature>
+        <feature version="3.8.0.Final">netty</feature>
+        <feature version="1.2.2">uncommons-maths</feature>
+        <feature version="2.5.0">protobuf</feature>
+        <feature version="1.2.0">typesafe-config</feature>
+        <feature version="0.5">leveldb</feature>
+        <bundle start-level="30">mvn:com.typesafe.akka/akka-actor_2.10/2.3.0</bundle>
+        <bundle start-level="30">mvn:com.typesafe.akka/akka-osgi_2.10/2.3.0</bundle>
+        <bundle start-level="30">mvn:com.typesafe.akka/akka-remote_2.10/2.3.0</bundle>
+        <bundle start-level="30">mvn:com.typesafe.akka/akka-cluster_2.10/2.3.0</bundle>
+        <bundle start-level="30">mvn:com.typesafe.akka/akka-persistence-experimental_2.10/2.3.0</bundle>
+        <bundle start-level="30">mvn:com.typesafe.akka/akka-slf4j_2.10/2.3.0</bundle>
+    </feature>
+    <feature name='dining-hakker' description='Akka Dining Hakker Sample' version='2.3.0' resolver='(obr)'>
+        <feature version="2.3.0">akka</feature>
+        <bundle start-level="50">mvn:com.typesafe.akka.akka-sample-osgi-dining-hakkers/api/2.3.0</bundle>
+        <bundle start-level="50">mvn:com.typesafe.akka.akka-sample-osgi-dining-hakkers/core/2.3.0</bundle>
+        <bundle start-level="50">mvn:com.typesafe.akka.akka-sample-osgi-dining-hakkers/command/2.3.0</bundle>
+    </feature>
+</features>
