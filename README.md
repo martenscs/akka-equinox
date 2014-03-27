@@ -1,9 +1,9 @@
 akka-equinox
 ============
 
-This project includes all the dependancies for executing the AKKA OSGi examples:
+This project includes all the dependencies for executing the AKKA OSGi examples:
 1. Target definition for Eclipse P2 repositories.
-2. OSGi runtime launch with defined dependancies.
+2. OSGi runtime launch with defined dependencies.
 3. A P2 repository prepare module.
 
 Steps for executing:
